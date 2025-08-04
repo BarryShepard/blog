@@ -2,11 +2,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("layout", "base.njk");
 
   return {
+    pathPrefix: "/blog/",
     dir: {
       input: ".",
       includes: "_includes",
-      output: "_site",
+      output: "docs",
     },
-    markdownTemplateEngine: "njk", // важно для layout в .md
+    markdownTemplateEngine: "njk",
   };
 };

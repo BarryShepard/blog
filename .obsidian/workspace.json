@@ -184,17 +184,19 @@
   },
   "active": "fd788162610bdf92",
   "lastOpenFiles": [
+    "docs/_site/dsasdf/index.html",
+    "docs/dsasdf/index.html",
+    "docs/_site/index.html",
+    "docs/_site/dsasdf",
+    "docs/README/index.html",
+    "docs/index.html",
+    "docs/dsasdf",
+    "docs/_site",
+    "docs/README",
+    "docs",
+    "README.md",
     "_data/defaults.json",
-    "_data",
     "dsasdf.md",
-    "index.md",
-    "_site/dsasdf/index.html",
-    "_site/dsasdf",
-    "_includes/base.njk",
-    "_includes/base.html",
-    "_includes/base",
-    "_includes/untitled folder",
-    "_includes",
-    "untitled folder"
+    "index.md"
   ]
 }

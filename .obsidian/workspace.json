@@ -22,20 +22,49 @@
             }
           },
           {
+            "id": "6f4a0f062ad186d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "1a6e016c01db8902",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
             "id": "79c9a42d9571934b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dsasdf.md",
+                "file": "заметка.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "dsasdf"
+              "title": "заметка"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -182,21 +211,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fd788162610bdf92",
+  "active": "1a6e016c01db8902",
   "lastOpenFiles": [
+    "docs/blog/заметка 1/index.html",
+    "docs/blog/заметка/index.html",
+    "docs/blog/заметка 1",
+    "docs/blog/заметка",
+    "docs/blog",
+    "docs/заметка/index.html",
+    "docs/заметка",
+    "docs/dsasdf 1/index.html",
+    "docs/dsasdf 1",
+    "заметка.md",
+    "blog/заметка 1.md",
+    "blog/заметка.md",
+    "index.md",
+    "blog/заметка 2.md",
+    "blog/заметка 3.md",
+    "blog/заметка 4.md",
+    "blog",
+    "dsasdf 1.md",
     "docs/dsasdf/index.html",
-    "docs/README/index.html",
-    "docs/index.html",
-    "docs/dsasdf",
-    "docs/README",
-    "docs",
-    "docs/CNAME",
-    "docs/_site/dsasdf/index.html",
-    "docs/_site/index.html",
-    "docs/_site/dsasdf",
-    "docs/_site",
-    "README.md",
-    "dsasdf.md",
-    "index.md"
+    "README.md"
   ]
 }

@@ -62,9 +62,18 @@
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "837191347391108c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "5bb8ef28c745ba05",
@@ -231,10 +240,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2801c628d7a394d5",
+  "active": "fd788162610bdf92",
   "lastOpenFiles": [
-    "second.md",
     "index.md",
+    "SCR-20250804-bayq.png",
+    "NDP472-DevPack-RUS.exe",
+    "assets_task_01k1t0k5eje6pbvtg1jzt1kv09_1754293618_img_0.webp",
+    "assets_task_01k1szjjm4e18tpxasf34xn2q2_1754292606_img_0.webp",
+    "second.md",
     "docs/second/index.html",
     "docs/second",
     "заметка.md",
@@ -248,7 +261,6 @@
     "docs/blog/note 1/index.html",
     "docs/blog/note 1",
     "docs/note/index.html",
-    "docs/note",
     "blog/note 2.md",
     "blog/note.md",
     "blog/note 1.md",

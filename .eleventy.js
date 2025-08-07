@@ -17,8 +17,12 @@ function wikilinkPlugin(md) {
     if (!raw) return false;
 
     const [hrefRaw, aliasRaw] = raw.split("|").map(s => s.trim());
-    const href = encodeURIComponent(hrefRaw); // можешь заменить на hrefRaw если не хочешь URL-кодировку
     const alias = aliasRaw || hrefRaw;
+
+    const href = hrefRaw.toLowerCase() === "index"
+      ? "/"
+      : `/${encodeURIComponent(hrefRaw)}/`;
+    //const alias = aliasRaw || hrefRaw;
 
     if (!silent) {
       const token = state.push("link_open", "a", 1);

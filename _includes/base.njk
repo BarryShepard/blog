@@ -2,35 +2,47 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title or "Мой блог" }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title or "Блог Димы" }}</title>
 
-    <!-- Pico CSS -->
+    <!-- Pico CSS (CDN) -->
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
 
-    <!-- Твои стили (если появятся) -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- Favicon (если добавишь) -->
-    {# <link rel="icon" href="/favicon.ico" /> #}
+    <!-- Твои стили (если есть) — через {{ base }} -->
+    <link rel="stylesheet" href="{{ base }}style.css" />
   </head>
-
   <body>
     <main class="container">
-      <!-- 🧠 Шапка -->
-      <header>
-        <p> Дима Овчаренко / <a href="https://t.me/olympysky" target="_blank">@olympysky</a></p>
+
+      {# ======= ШАПКА ======= #}
+      <header style="margin-top: 1rem;">
+        <p style="margin:0">
+          <strong>Дима Овчаренко</strong>
+          /
+          <a href="https://t.me/olympysky" target="_blank" rel="noopener">@olympysky</a>
+        </p>
         <hr />
+        {# Пример навигации — если нужно #}
+        {# <nav>
+          <ul>
+            <li><a href="{{ base }}">Главная</a></li>
+            <li><a href="{{ base }}about/">О сайте</a></li>
+          </ul>
+        </nav> #}
       </header>
 
-      <!-- 📄 Контент -->
+      {# ======= КОНТЕНТ СТРАНИЦЫ ======= #}
       {{ content | safe }}
 
-      <!-- 🐾 Подвал -->
+      {# ======= ПОДВАЛ ======= #}
       <footer style="margin-top: 4rem;">
         <hr />
         <p><em>Делай то, что нравится © 2025</em></p>
       </footer>
     </main>
+
+    {# Пример: как правильно вставлять картинки и ссылки с {{ base }} #}
+    {# <img src="{{ base }}images/test.png" alt="пример" /> #}
+    {# <a href="{{ base }}second/">Ссылка на страницу</a> #}
   </body>
 </html>

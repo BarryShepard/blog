@@ -54,6 +54,7 @@ module.exports = function (eleventyConfig) {
 
   // 2) Статика
   eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("files");
   eleventyConfig.addPassthroughCopy("style.css");
 
   // 3) Глобальные данные

@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <!-- Powered by local files -->
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ title or "Блог Димы" }}</title>
-
-    <!-- Pico CSS (CDN) -->
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
-
-    <!-- Твои стили (если есть) — через {{ base }} -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+    <meta name="description" content="{{ description or site.description }}" />
+    <title>{% if title and title != site.displayName %}{{ title }} - {{ site.displayName }}{% else %}{{ site.displayName }}{% endif %}</title>
     <link rel="stylesheet" href="{{ base }}style.css" />
   </head>
-  <body>
-    <main class="container">
-
-      {# ======= ШАПКА ======= #}
-      <header style="margin-top: 1rem;">
-        <p style="margin:0">
-          Дима Овчаренко
-          /
-          <a href="https://t.me/olympysky" target="_blank" rel="noopener">@olympysky</a>
+  {% set isHome = page and page.url == "/" %}
+  {% set isEntry = section %}
+  {% set isTopPage = isHome or (page and page.fileSlug == "products") %}
+  <body class="{% if isHome %}landing{% elif page and page.fileSlug %}page-{{ page.fileSlug }}{% endif %}">
+    <header>
+      {% if isTopPage %}
+        <h1 class="site-title">{{ site.displayName }}</h1>
+      {% else %}
+        <h1 class="site-title"><a href="{{ base }}">{{ site.displayName }}</a></h1>
+      {% endif %}
+      {% if not isEntry %}
+      <nav>
+        <p>
+          {% if isHome %}
+            <span aria-current="page">Пишу</span>
+          {% else %}
+            <a href="{{ base }}">Пишу</a>
+          {% endif %}
+          {% if page and page.fileSlug == "products" %}
+            <span aria-current="page">Делаю</span>
+          {% else %}
+            <a href="{{ base }}products/">Делаю</a>
+          {% endif %}
         </p>
-        <hr />
-        {# Пример навигации — если нужно #}
-        {# <nav>
-          <ul>
-            <li><a href="{{ base }}">Главная</a></li>
-            <li><a href="{{ base }}about/">О сайте</a></li>
-          </ul>
-        </nav> #}
-      </header>
-
-      {# ======= КОНТЕНТ СТРАНИЦЫ ======= #}
+      </nav>
+      {% endif %}
+    </header>
+    <main>
       {{ content | safe }}
-
-      {# ======= ПОДВАЛ ======= #}
-      <footer style="margin-top: 4rem;">
-        <hr />
-        <p><em>Делай то, что нравится © 2025</em></p>
-      </footer>
     </main>
-
-    {# Пример: как правильно вставлять картинки и ссылки с {{ base }} #}
-    {# <img src="{{ base }}images/test.png" alt="пример" /> #}
-    {# <a href="{{ base }}second/">Ссылка на страницу</a> #}
+    <footer>
+      <p>Делай то, что нравится</p>
+    </footer>
   </body>
 </html>

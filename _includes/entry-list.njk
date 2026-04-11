@@ -1,0 +1,9 @@
+{% if items.length -%}
+<ul class="blog-posts">
+{%- for item in items %}
+  <li><a href="{{ item.url }}"><span class="post-title">{{ item.data.title }}</span>{% if item.data.date %}<time class="post-date" datetime="{{ item.data.date | htmlDateString }}">{{ item.data.date | readableDate }}</time>{% endif %}</a></li>
+{%- endfor %}
+</ul>
+{%- else %}
+<p>{{ emptyMessage }}</p>
+{%- endif %}

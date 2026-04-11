@@ -39,18 +39,28 @@
             "id": "1c694ca0ceafba75",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "telegram-dnd.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "telegram-dnd"
+              "title": "New tab"
             }
           },
           {
             "id": "2801c628d7a394d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Играем в Windows игры на макбуке.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Играем в Windows игры на макбуке"
+            }
+          },
+          {
+            "id": "68681911fcfefe42",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -64,21 +74,21 @@
             }
           },
           {
-            "id": "68681911fcfefe42",
+            "id": "1105d25fc169f1c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "prikorm.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "prikorm"
+              "title": "README"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -226,50 +236,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "68681911fcfefe42",
+  "active": "2801c628d7a394d5",
   "lastOpenFiles": [
-    "docs/files/prikorm.pdf",
-    "docs/files",
-    "files/prikorm.pdf",
-    "files",
-    "filed/prikorm.pdf",
-    "prikorm.pdf",
-    "filed",
-    "untitled folder",
-    "index.md",
+    "docs/Играем в Windows игры на макбуке/index.html",
+    "docs/Играем в Windows игры на макбуке",
+    "work.md",
+    "404.md",
+    "Играем в Windows игры на макбуке.md",
+    "docs/prikorm 1/index.html",
+    "docs/prikorm 1",
+    "_templates/visual-artifact.md",
+    "_templates/new-note.md",
+    "_templates/callback-notification.md",
+    "_templates/break.md",
+    "_templates/artifact.md",
+    "docs/Установщик игр для стима/index.html",
+    "docs/Установщик игр для стима",
+    "sous-vide.md",
     "prikorm.md",
-    "docs/prikorm/prikorm.pdf",
-    "docs/prikorm.pdf",
-    "Прикорм.pdf",
+    "products.md",
+    "AGENTS.md",
+    "index.md",
+    "README.md",
+    "soon.md",
+    "docs/fonts/IBMPlexMono-Bold.ttf",
+    "fonts/IBMPlexMono-Bold.ttf",
+    "docs/fonts/IBMPlexMono-Regular.ttf",
+    "fonts/IBMPlexMono-Regular.ttf",
+    "backlog.md",
+    "blog.md",
+    "_includes/section-backlink.njk",
+    "images/Sous-vide-core.png",
+    "docs/images/Sous-vide-core.png",
+    "Pasted image 20251026223412.png",
+    "images/Sous-vide-full.png",
+    "docs/images/Sous-vide-full.png",
+    "maslo.md",
     "second.md",
     "telegram-dnd.md",
     "Вторая.md",
     "assets_task_01k1t0k5eje6pbvtg1jzt1kv09_1754293618_img_0.webp",
     "assets_task_01k1szjjm4e18tpxasf34xn2q2_1754292606_img_0.webp",
     "SCR-20250804-bayq.png",
-    "_templates/new-note.md",
-    "_templates/break.md",
-    "blog.md",
     "blog 1.md",
     "[[index]].md",
     "blog/telegram-dnd.md",
-    "blog/telegram-dnd 1.md",
     "images/test.png",
-    "docs/images/test.png",
-    "_images/test.png",
-    "_images/SCR-20250804-bayq.png",
-    "заметка.md",
-    "dsasdf 1.md",
-    "blog/dsasdf.md",
-    "note.md",
-    "blog/note 2.md",
-    "blog/note.md",
-    "blog/note 1.md",
-    "blog/заметка.md",
-    "blog/заметка 1.md",
-    "blog/заметка 2.md",
-    "blog/заметка 3.md",
-    "blog/заметка 4.md",
-    "README.md"
+    "docs/images/test.png"
   ]
 }

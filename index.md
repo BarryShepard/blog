@@ -1,7 +1,8 @@
 ---
 layout: base.njk
-title: Главная
+title: Дима Овчаренко
+description: Делай то, что нравится
 ---
-[[prikorm|Чеклист прикорма ребенка до 1 года]]
-
-
+{% set items = collections.entries %}
+{% set emptyMessage = "Пока здесь еще нет опубликованных материалов, но каркас уже готов." %}
+{% include "entry-list.njk" %}

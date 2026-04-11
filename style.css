@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/IBMPlexMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/IBMPlexMono-Bold.ttf") format("truetype");
+}
+
+:root {
+  color-scheme: dark;
+  --width: 760px;
+  --font-main: "IBM Plex Mono", "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --font-secondary: "IBM Plex Mono", "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --font-scale: 1em;
+  --background-color: #15100c;
+  --heading-color: #ff9b2f;
+  --text-color: #f08a24;
+  --link-color: #ff9b2f;
+  --link-hover-color: #ffc177;
+  --code-background-color: rgba(255, 155, 47, 0.12);
+  --code-color: #ffb15d;
+  --blockquote-color: #c97632;
+  --rule-color: rgba(255, 155, 47, 0.24);
+  --surface-color: rgba(255, 155, 47, 0.09);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-size: var(--font-scale);
+  margin: auto;
+  padding: 24px 20px;
+  max-width: var(--width);
+  text-align: left;
+  background-color: var(--background-color);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+header {
+  margin-bottom: 0;
+}
+
+main {
+  line-height: 1.75;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1.5rem 0 0;
+  border-top: 1px dashed var(--rule-color);
+  text-align: left;
+}
+
+footer p {
+  margin: 0.35rem 0;
+  font-size: 0.92em;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-main);
+  color: var(--heading-color);
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  margin: 2.4rem 0 1rem;
+  font-size: 1.7em;
+}
+
+h2 {
+  margin: 2.2rem 0 0.75rem;
+  font-size: 1.25em;
+}
+
+h3 {
+  margin: 2rem 0 0.65rem;
+  font-size: 1.08em;
+}
+
+h4,
+h5,
+h6 {
+  margin: 1.7rem 0 0.55rem;
+  font-size: 1em;
+}
+
+p,
+ul,
+ol,
+blockquote,
+pre,
+table {
+  margin-top: 0;
+  margin-bottom: 1.15rem;
+}
+
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+
+li + li {
+  margin-top: 0.35rem;
+}
+
+a {
+  color: var(--link-color);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+  text-decoration-thickness: 1px;
+}
+
+a:visited {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration-thickness: 2px;
+}
+
+nav p {
+  margin: 0.75rem 0 2.25rem;
+}
+
+nav a,
+nav span {
+  margin-right: 8px;
+}
+
+nav span[aria-current="page"] {
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+strong,
+b {
+  color: var(--heading-color);
+}
+
+button {
+  margin: 0;
+  cursor: pointer;
+}
+
+time {
+  font-family: var(--font-main);
+  font-size: 15px;
+}
+
+table {
+  width: 100%;
+}
+
+hr {
+  border: 0;
+  border-top: 1px dashed var(--rule-color);
+  margin: 2rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+code {
+  font-family: var(--font-main);
+  padding: 2px;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: 3px;
+}
+
+pre,
+.highlight,
+.code {
+  padding: 0.8rem 1rem;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: 3px;
+  overflow-x: auto;
+}
+
+blockquote {
+  border-left: 1px solid var(--rule-color);
+  color: var(--blockquote-color);
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.45em;
+}
+
+.site-title a {
+  color: var(--heading-color);
+}
+
+ul.blog-posts {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.blog-posts li {
+  display: block;
+  margin-top: 0.7rem;
+}
+
+ul.blog-posts li a:visited {
+  color: var(--link-color);
+}
+
+ul.blog-posts li a {
+  display: block;
+}
+
+.post-title {
+  display: block;
+}
+
+.post-date {
+  display: block;
+  margin-top: 0.12rem;
+  color: var(--text-color);
+  font-size: 0.92em;
+  line-height: 1.45;
+}
+
+ul.blog-posts li a:hover .post-date {
+  color: var(--text-color);
+}
+
+.backlink {
+  margin: 0.75rem 0 2.25rem;
+  font-size: 0.92em;
+}
+
+.backlink a {
+  display: inline-block;
+}
+
+.backlink a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.resource-links a {
+  display: inline-block;
+}
+
+.resource-links a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.note {
+  padding: 0.8rem 0.95rem;
+  border: 1px dashed var(--rule-color);
+  border-radius: 4px;
+  background: var(--surface-color);
+  color: var(--blockquote-color);
+}

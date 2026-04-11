@@ -1,0 +1,17 @@
+{% if section == "product" %}
+  {% set parentUrl = base ~ "products/" %}
+  {% set parentLabel = "Делаю" %}
+{% elif section == "blog" %}
+  {% set parentUrl = base %}
+  {% set parentLabel = "Пишу" %}
+{% elif section == "media" %}
+  {% set parentUrl = base ~ "media/" %}
+  {% set parentLabel = "медиа" %}
+{% elif section == "project" %}
+  {% set parentUrl = base ~ "projects/" %}
+  {% set parentLabel = "проекты" %}
+{% else %}
+  {% set parentUrl = base %}
+  {% set parentLabel = "Пишу" %}
+{% endif %}
+<p class="backlink"><a href="{{ parentUrl }}">← {{ parentLabel }}</a></p>
